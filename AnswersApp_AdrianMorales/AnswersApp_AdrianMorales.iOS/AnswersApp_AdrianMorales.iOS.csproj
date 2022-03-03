@@ -142,4 +142,7 @@
       <Name>AnswersApp_AdrianMorales</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\appbg.jpg" />
+  </ItemGroup>
 </Project>

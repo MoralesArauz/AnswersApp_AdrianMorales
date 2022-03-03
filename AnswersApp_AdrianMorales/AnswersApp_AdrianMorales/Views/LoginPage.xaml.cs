@@ -17,5 +17,16 @@ namespace AnswersApp_AdrianMorales.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+        // Show or ocult the password
+        public void CmdSeePassword(object sender, ToggledEventArgs e)
+        {
+            TxtPassword.IsPassword = !SwSeePassword.IsToggled;
+        }
+
+        // Métodos de capa gráfica, es necesario el await
+        private async void CmdUserRegister(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserRegisterPage());
+        }
     }
 }
